@@ -1,0 +1,15 @@
+*.class
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# VM crash logs
+hs_err_pid*
+
+/BorneoWeb/target/
+/BorneoServer/target/

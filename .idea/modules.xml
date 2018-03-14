@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Borneo.iml" filepath="$PROJECT_DIR$/.idea/Borneo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BorneoServer/BorneoServer.iml" filepath="$PROJECT_DIR$/BorneoServer/BorneoServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BorneoWeb/BorneoWeb.iml" filepath="$PROJECT_DIR$/BorneoWeb/BorneoWeb.iml" />
+    </modules>
+  </component>
+</project>

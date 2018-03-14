@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="BorneoWeb:war">
+    <output-path>$PROJECT_DIR$/BorneoWeb/target</output-path>
+    <root id="archive" name="Borneo-Web.war">
+      <element id="artifact" artifact-name="BorneoWeb:war exploded" />
+    </root>
+  </artifact>
+</component>
