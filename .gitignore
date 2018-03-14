@@ -13,3 +13,5 @@ hs_err_pid*
 
 /BorneoWeb/target/
 /BorneoServer/target/
+
+.idea

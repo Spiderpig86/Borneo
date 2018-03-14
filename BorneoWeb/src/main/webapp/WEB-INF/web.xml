@@ -7,4 +7,22 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
 		 http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
+
+    <!-- Configure the front controller -->
+    <!-- This accepts every request coming from the client -->
+    <!-- So this helps with handling all the URL mappings of our website -->
+    <!-- Servlet is a Java program running on the server to handle requests -->
+    <servlet>
+        <servlet-name>dispatcher</servlet-name>
+        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+    </servlet>
+
+    <!-- Servlet mapping -->
+    <!-- '/' is the path since that would force all requests to the
+    FrontController -->
+    <servlet-mapping>
+        <servlet-name>dispatcher</servlet-name>
+        <url-pattern>/</url-pattern>
+    </servlet-mapping>
+
 </web-app>
