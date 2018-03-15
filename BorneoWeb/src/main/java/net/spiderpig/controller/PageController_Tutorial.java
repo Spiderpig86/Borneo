@@ -11,17 +11,17 @@ import org.springframework.web.servlet.ModelAndView;
  * The controller that holds all the request mappings for our server
  */
 
-@Controller
-public class PageController_Tutorial {
-
-    @RequestMapping(value = {"/", "/home", "/index"})
-    public ModelAndView index() {
-        ModelAndView mv = new ModelAndView("page"); // Create a model view
-        // with page as the corresponding JSP name. Note that this is a
-        // logical name, and does not point to the physical page
-        mv.addObject("greeting", "Hey, this is working!");
-
-        return mv;
-    }
-
-}
+//@Controller
+//public class PageController_Tutorial {
+//
+//    @RequestMapping(value = {"/", "/home", "/index"})
+//    public ModelAndView index() {
+//        ModelAndView mv = new ModelAndView("page"); // Create a model view
+//        // with page as the corresponding JSP name. Note that this is a
+//        // logical name, and does not point to the physical page
+//        mv.addObject("greeting", "Hey, this is working!");
+//
+//        return mv;
+//    }
+//
+//}
