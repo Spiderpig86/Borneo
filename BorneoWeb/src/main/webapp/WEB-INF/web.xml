@@ -13,7 +13,8 @@
     <!-- So this helps with handling all the URL mappings of our website -->
     <!-- Servlet is a Java program running on the server to handle requests -->
     <servlet>
-        <servlet-name>dispatcher</servlet-name>
+        <servlet-name>dispatcher</servlet-name> <!-- By convention, our
+        servlet file name must match this (dispatcher-servlet.xml) -->
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
     </servlet>
 

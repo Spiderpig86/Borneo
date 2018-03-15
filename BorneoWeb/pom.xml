@@ -39,6 +39,14 @@
           <version>${spring.version}</version>
       </dependency>
 
+      <!-- JSTL -->
+      <!-- Allows us to use Java tags in our JSPs -->
+      <dependency>
+          <groupId>jstl</groupId>
+          <artifactId>jstl</artifactId>
+          <version>1.2</version>
+      </dependency>
+
   </dependencies>
   <build>
 
