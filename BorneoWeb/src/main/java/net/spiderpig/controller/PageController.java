@@ -1,5 +1,7 @@
 package net.spiderpig.controller;
 
+import net.spiderpig.daoimpl.CategoryDAO;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
@@ -11,6 +13,9 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class PageController {
 
+    @Autowired // Tells spring to auto wire or dependency inject from backend
+    private CategoryDAO categoryDAO;
+
     @RequestMapping(value = {"/", "/home", "/index"})
     public ModelAndView index() {
         ModelAndView mv = new ModelAndView("page"); // Create a model view
@@ -19,6 +24,7 @@ public class PageController {
 
         /* Set the page properties */
         mv.addObject("title", "Home");
+        mv.addObject("categories", categoryDAO.listCategories());
         mv.addObject("userClickHome", true); // This specifies the object
         // in the JSP with the value true meaning the user went to the homepage
 

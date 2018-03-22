@@ -2,6 +2,7 @@ package net.spiderpig.daoimpl;
 
 import net.spiderpig.dao.ICategoryDAO;
 import net.spiderpig.dto.Category;
+import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,6 +10,7 @@ import java.util.List;
 /**
  * Concrete implementation of the Category data access object
  */
+@Repository("categoryDAO") // Registers the object so it would be recognized
 public class CategoryDAO implements ICategoryDAO {
 
     /**

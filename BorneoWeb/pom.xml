@@ -13,7 +13,8 @@
         <javaee.version>8.0</javaee.version>
         <spring.version>4.3.6.RELEASE</spring.version>
     </properties>
-  <dependencies>
+
+    <dependencies>
 
       <!-- https://mvnrepository.com/artifact/javax/javaee-api -->
       <!-- JAVA EE API -->
@@ -24,13 +25,13 @@
           <scope>provided</scope>
       </dependency>
 
-
+      <!-- JUnit -->
       <dependency>
           <groupId>junit</groupId>
           <artifactId>junit</artifactId>
           <version>3.8.1</version>
           <scope>test</scope>
-    </dependency>
+      </dependency>
 
       <!-- SPRING -->
       <dependency>
@@ -46,6 +47,13 @@
           <artifactId>jstl</artifactId>
           <version>1.2</version>
       </dependency>
+
+        <!-- Link the backend project -->
+        <dependency>
+            <groupId>net.spiderpig</groupId>
+            <artifactId>Borneo-Server</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
 
   </dependencies>
   <build>

@@ -18,6 +18,9 @@ are -->
     <!-- Add the context that points to our controller in our controller
     package, will be used to handle web requests -->
     <context:component-scan base-package="net.spiderpig.controller" />
+    <context:component-scan base-package="net.spiderpig.daoimpl" /> <!-- Add
+    this so that our context can scan and find this component (used in
+    PageController -->
 
     <!-- We need to create a bean to create our view resolver, to help us map
      the JSPs to our routes -->

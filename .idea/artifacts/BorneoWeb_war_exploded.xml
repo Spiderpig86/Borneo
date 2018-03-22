@@ -16,6 +16,9 @@
           <element id="library" level="project" name="Maven: org.springframework:spring-expression:4.3.6.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-web:4.3.6.RELEASE" />
           <element id="library" level="project" name="Maven: jstl:jstl:1.2" />
+          <element id="archive" name="Borneo-Server-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="BorneoServer" />
+          </element>
         </element>
       </element>
       <element id="directory" name="META-INF">
