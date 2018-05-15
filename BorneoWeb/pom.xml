@@ -1,52 +1,49 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>net.spiderpig</groupId>
-  <artifactId>Borneo-Web</artifactId>
-  <packaging>war</packaging>
-  <version>1.0-SNAPSHOT</version>
-  <name>Borneo-Web Maven Webapp</name>
-  <url>http://maven.apache.org</url>
-
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>net.spiderpig</groupId>
+    <artifactId>Borneo-Web</artifactId>
+    <packaging>war</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <name>Borneo-Web Maven Webapp</name>
+    <url>http://maven.apache.org</url>
     <!-- Create property since version may change -->
     <properties>
         <javaee.version>8.0</javaee.version>
         <spring.version>4.3.6.RELEASE</spring.version>
     </properties>
-
     <dependencies>
 
-      <!-- https://mvnrepository.com/artifact/javax/javaee-api -->
-      <!-- JAVA EE API -->
-      <dependency>
-          <groupId>javax</groupId>
-          <artifactId>javaee-api</artifactId>
-          <version>${javaee.version}</version>
-          <scope>provided</scope>
-      </dependency>
+        <!-- https://mvnrepository.com/artifact/javax/javaee-api -->
+        <!-- JAVA EE API -->
+        <dependency>
+            <groupId>javax</groupId>
+            <artifactId>javaee-api</artifactId>
+            <version>${javaee.version}</version>
+            <scope>provided</scope>
+        </dependency>
 
-      <!-- JUnit -->
-      <dependency>
-          <groupId>junit</groupId>
-          <artifactId>junit</artifactId>
-          <version>3.8.1</version>
-          <scope>test</scope>
-      </dependency>
+        <!-- JUnit -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>3.8.1</version>
+            <scope>test</scope>
+        </dependency>
 
-      <!-- SPRING -->
-      <dependency>
-          <groupId>org.springframework</groupId>
-          <artifactId>spring-webmvc</artifactId>
-          <version>${spring.version}</version>
-      </dependency>
-
-      <!-- JSTL -->
-      <!-- Allows us to use Java tags in our JSPs -->
-      <dependency>
-          <groupId>jstl</groupId>
-          <artifactId>jstl</artifactId>
-          <version>1.2</version>
-      </dependency>
+        <!-- SPRING -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <!-- JSTL -->
+        <!-- Allows us to use Java tags in our JSPs -->
+        <dependency>
+            <groupId>jstl</groupId>
+            <artifactId>jstl</artifactId>
+            <version>1.2</version>
+        </dependency>
 
         <!-- Link the backend project -->
         <dependency>
@@ -54,22 +51,19 @@
             <artifactId>Borneo-Server</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
-
-  </dependencies>
-  <build>
-
-      <plugins>
-          <!-- Update to latest version of Java -->
-          <plugin>
-              <artifactId>maven-compiler-plugin</artifactId>
-              <version>3.1</version>
-              <configuration>
-                  <source>1.8</source>
-                  <target>1.8</target>
-              </configuration>
-          </plugin>
-      </plugins>
-
-    <finalName>Borneo-Web</finalName>
-  </build>
+    </dependencies>
+    <build>
+        <plugins>
+            <!-- Update to latest version of Java -->
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.1</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+        <finalName>Borneo-Web</finalName>
+    </build>
 </project>

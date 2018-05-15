@@ -7,7 +7,7 @@
 --%>
 <footer class="py-5 bg-primary">
     <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Your Website
+        <p class="m-0 text-center text-white">Copyright &copy; Borneo
             2018</p>
     </div>
 </footer>

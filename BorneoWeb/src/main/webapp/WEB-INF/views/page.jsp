@@ -75,6 +75,12 @@ Store the path in a variable called contextRoot for the base directory -->
                 <c:if test="${ userClickContact == true }">
                     <%@include file="contact.jsp"%> <!-- Render contact content -->
                 </c:if>
+
+                <!-- Load only when the user clicks the contact page -->
+                <c:if test="${ userClickAllProducts == true or userClickCategoryProducts == true }">
+                    <%@include file="listproducts.jsp"%> <!-- Render contact
+                    content -->
+                </c:if>
             </div>
 
             <!-- Footer -->
