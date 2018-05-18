@@ -1,16 +1,26 @@
 package net.spiderpig.DataTransferObjects;
 
+import javax.persistence.*;
+
 /**
  * The base class for categories for different categories of items sold.
  */
+@Entity // Use annotation to tell Hibernate that this is an entity class for DB
 public class Category {
 
     /**
-     * Private Fields
+     * Private Fields with annotations for database
      */
-    private int id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY) // Auto
+    // generate/increment ID
+    private int id; // Matches with ID stored in column in DB
+    @Column(name = "name") // Map to image_url in SQL field. Not needed if
+    // same name
     private String catName;
+    @Column(name = "description")
     private String catDescription;
+    @Column(name = "image_url")
     private String catImageURL;
     private boolean isActive = true; // Determines if a category will be
     // shown in the store and is controlled by the admin
@@ -57,4 +67,12 @@ public class Category {
     public void setActive(boolean active) {
         isActive = active;
     }
+
+    @Override
+    public String toString() {
+        return "Category [id = " + id + ", name = " + catName + ", " +
+                "description = " + catDescription + ", active = " + isActive
+                + "]";
+    }
+    
 }

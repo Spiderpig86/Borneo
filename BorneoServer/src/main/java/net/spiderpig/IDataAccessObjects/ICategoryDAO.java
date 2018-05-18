@@ -20,7 +20,17 @@ public interface ICategoryDAO {
     /**
      * Get a specific category by ID
      * @param id - id of the category
-     * @return - the Category object
+     * @return
+     *      The Category object
      */
     Category get(int id);
+
+    /**
+     * Add a category to the data base.
+     * @param category - category object we will be adding
+     * @return
+     *      Return status telling us if adding the category was successful or
+     *      not
+     */
+    boolean add(Category category);
 }

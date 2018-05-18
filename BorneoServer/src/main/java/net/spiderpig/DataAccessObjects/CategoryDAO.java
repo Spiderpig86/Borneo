@@ -2,7 +2,10 @@ package net.spiderpig.DataAccessObjects;
 
 import net.spiderpig.IDataAccessObjects.ICategoryDAO;
 import net.spiderpig.DataTransferObjects.Category;
+import org.hibernate.SessionFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,6 +17,9 @@ import java.util.List;
 @Repository("categoryDAO") // Registers the object so it would be recognized
 // in our front-end code
 public class CategoryDAO implements ICategoryDAO {
+
+    @Autowired
+    private SessionFactory sessionFactory; // Used for
 
     /**
      * Data fields
@@ -68,5 +74,27 @@ public class CategoryDAO implements ICategoryDAO {
         }
 
         return null; // Not found
+    }
+
+    /**
+     * Add a category to the data base.
+     *
+     * @param category - category object we will be adding
+     * @return Return status telling us if adding the category was successful or
+     * not
+     */
+    @Override
+    @Transactional // This method runs in a transaction context
+    public boolean add(Category category) {
+        try {
+            // Add the category to the database table using the session factory
+            sessionFactory.getCurrentSession().persist(category); // Persists
+            // the category inside the database
+
+            return true;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return false;
+        }
     }
 }

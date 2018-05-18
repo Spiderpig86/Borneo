@@ -21,6 +21,8 @@ are -->
     <context:component-scan base-package="net.spiderpig.DataAccessObjects" /> <!-- Add
     this so that our context can scan and find this component (used in
     PageController -->
+    <context:component-scan base-package="net.spiderpig.Config" /> <!-- Scan
+    for Hibernate config -->
 
     <!-- We need to create a bean to create our view resolver, to help us map
      the JSPs to our routes -->
