@@ -1,7 +1,7 @@
 package net.spiderpig.DataAccessObjects;
 
 import net.spiderpig.IDataAccessObjects.ICategoryDAO;
-import net.spiderpig.DatatTransferObjects.Category;
+import net.spiderpig.DataTransferObjects.Category;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;

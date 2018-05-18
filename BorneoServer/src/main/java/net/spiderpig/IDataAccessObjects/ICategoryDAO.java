@@ -1,6 +1,6 @@
 package net.spiderpig.IDataAccessObjects;
 
-import net.spiderpig.DatatTransferObjects.Category;
+import net.spiderpig.DataTransferObjects.Category;
 
 import java.util.List;
 

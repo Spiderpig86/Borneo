@@ -1,4 +1,4 @@
-package net.spiderpig.DatatTransferObjects;
+package net.spiderpig.DataTransferObjects;
 
 /**
  * The base class for categories for different categories of items sold.
