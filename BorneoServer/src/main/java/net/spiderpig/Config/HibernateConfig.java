@@ -22,8 +22,8 @@ import java.util.Properties;
  */
 
 @Configuration // Enables bean management by Spring
-@ComponentScan(basePackages = {"net.spiderpig.DataTransferObjects"}) //
-// Location of entities used in Spring
+@ComponentScan(basePackages = {"net.spiderpig"}) // Location of entities used
+// in Spring
 @EnableTransactionManagement // Allow Spring to manage transactions for us
 public class HibernateConfig {
 
@@ -31,7 +31,7 @@ public class HibernateConfig {
     private final static String DATABASE_URL = "jdbc:h2:tcp://localhost/~/borneodb";
     private final static String DATABASE_DRIVER = "org.h2.Driver"; // DB driver
     private final static String DATABASE_DIALECT = "org.hibernate.dialect" +
-            ".H2Diaclect";
+            ".H2Dialect";
     private final static String DATABASE_USERNAME = "sa";
     private final static String DATABASE_PASSWORD = "";
 

@@ -19,7 +19,7 @@
           <element id="archive" name="Borneo-Server-1.0-SNAPSHOT.jar">
             <element id="module-output" name="BorneoServer" />
           </element>
-          <element id="library" level="project" name="Maven: com.h2database:h2:1.4.193" />
+          <element id="library" level="project" name="Maven: com.h2database:h2:1.4.197" />
           <element id="library" level="project" name="Maven: org.hibernate:hibernate-core:5.2.7.Final" />
           <element id="library" level="project" name="Maven: org.jboss.logging:jboss-logging:3.3.0.Final" />
           <element id="library" level="project" name="Maven: org.hibernate.javax.persistence:hibernate-jpa-2.1-api:1.0.0.Final" />

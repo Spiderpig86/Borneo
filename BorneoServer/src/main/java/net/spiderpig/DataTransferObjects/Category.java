@@ -22,6 +22,7 @@ public class Category {
     private String catDescription;
     @Column(name = "image_url")
     private String catImageURL;
+    @Column(name = "is_active")
     private boolean isActive = true; // Determines if a category will be
     // shown in the store and is controlled by the admin
 

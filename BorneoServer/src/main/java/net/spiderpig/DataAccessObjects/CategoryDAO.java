@@ -19,7 +19,7 @@ import java.util.List;
 public class CategoryDAO implements ICategoryDAO {
 
     @Autowired
-    private SessionFactory sessionFactory; // Used for
+    private SessionFactory sessionFactory; // Used for creating sessions
 
     /**
      * Data fields
