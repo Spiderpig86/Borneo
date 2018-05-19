@@ -2,6 +2,7 @@ package net.spiderpig.controller;
 
 import net.spiderpig.DataAccessObjects.CategoryDAO;
 import net.spiderpig.DataTransferObjects.Category;
+import net.spiderpig.IDataAccessObjects.ICategoryDAO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -16,8 +17,10 @@ import org.springframework.web.servlet.ModelAndView;
 public class PageController {
 
     @Autowired // Tells spring to auto wire or dependency inject from backend
-    private CategoryDAO categoryDAO; // This is the name we used in the DAO.
+    private ICategoryDAO categoryDAO; // This is the name we used in the DAO.
     // There is no need to reinstantiate a new CategoryDAO object
+    // NOTE: Must be ICategoryDAO instead of CategoryDAO since it uses an
+    // interface
 
     @RequestMapping(value = {"/", "/home", "/index"})
     public ModelAndView index() {

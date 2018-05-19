@@ -29,31 +29,31 @@ public class CategoryDAO implements ICategoryDAO {
     // categories in teh store
 
     /* Initialize the dummy data for testing */
-    static {
-        Category category = new Category();
-        category.setCatName("TVs");
-        category.setCatDescription("Description for the TV category");
-        category.setCatImageURL("CAT_1.png");
-        category.setActive(true);
-
-        categories.add(category);
-
-        category = new Category();
-        category.setCatName("Smartphones");
-        category.setCatDescription("Description for smartphone category");
-        category.setCatImageURL("CAT_2.png");
-        category.setActive(true);
-
-        categories.add(category);
-
-        category = new Category();
-        category.setCatName("Laptops");
-        category.setCatDescription("Description for laptops category");
-        category.setCatImageURL("CAT_3.png");
-        category.setActive(true);
-
-        categories.add(category);
-    }
+//    static {
+//        Category category = new Category();
+//        category.setCatName("TVs");
+//        category.setCatDescription("Description for the TV category");
+//        category.setCatImageURL("CAT_1.png");
+//        category.setActive(true);
+//
+//        categories.add(category);
+//
+//        category = new Category();
+//        category.setCatName("Smartphones");
+//        category.setCatDescription("Description for smartphone category");
+//        category.setCatImageURL("CAT_2.png");
+//        category.setActive(true);
+//
+//        categories.add(category);
+//
+//        category = new Category();
+//        category.setCatName("Laptops");
+//        category.setCatDescription("Description for laptops category");
+//        category.setCatImageURL("CAT_3.png");
+//        category.setActive(true);
+//
+//        categories.add(category);
+//    }
 
     /**
      * Return a list of categories in the store
