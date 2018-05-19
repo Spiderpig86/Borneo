@@ -7,20 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c7f987c9-c27f-4bab-b064-8c860d22380a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BorneoServer/src/test/java/net/spiderpig/CategoryTestCase.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/BorneoWeb_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/BorneoWeb_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BorneoServer/BorneoServer.iml" afterPath="$PROJECT_DIR$/BorneoServer/BorneoServer.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BorneoServer/pom.xml" afterPath="$PROJECT_DIR$/BorneoServer/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BorneoServer/src/main/java/net/spiderpig/App.java" afterPath="$PROJECT_DIR$/BorneoServer/src/main/java/net/spiderpig/App.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BorneoServer/src/main/java/net/spiderpig/Config/HibernateConfig.java" afterPath="$PROJECT_DIR$/BorneoServer/src/main/java/net/spiderpig/Config/HibernateConfig.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BorneoServer/src/main/java/net/spiderpig/DataAccessObjects/CategoryDAO.java" afterPath="$PROJECT_DIR$/BorneoServer/src/main/java/net/spiderpig/DataAccessObjects/CategoryDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BorneoServer/src/main/java/net/spiderpig/DataTransferObjects/Category.java" afterPath="$PROJECT_DIR$/BorneoServer/src/main/java/net/spiderpig/DataTransferObjects/Category.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BorneoServer/src/main/java/net/spiderpig/IDataAccessObjects/ICategoryDAO.java" afterPath="$PROJECT_DIR$/BorneoServer/src/main/java/net/spiderpig/IDataAccessObjects/ICategoryDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BorneoServer/src/test/java/net/spiderpig/AppTest.java" afterPath="$PROJECT_DIR$/BorneoServer/src/test/java/net/spiderpig/AppTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BorneoWeb/BorneoWeb.iml" afterPath="$PROJECT_DIR$/BorneoWeb/BorneoWeb.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BorneoWeb/src/main/java/net/spiderpig/controller/PageController.java" afterPath="$PROJECT_DIR$/BorneoWeb/src/main/java/net/spiderpig/controller/PageController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BorneoWeb/src/main/java/net/spiderpig/controller/PageController_Tutorial.java" afterPath="$PROJECT_DIR$/BorneoWeb/src/main/java/net/spiderpig/controller/PageController_Tutorial.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BorneoServer/src/test/java/net/spiderpig/CategoryTestCase.java" afterPath="$PROJECT_DIR$/BorneoServer/src/test/java/net/spiderpig/CategoryTestCase.java" />
     </list>
     <ignored path="$PROJECT_DIR$/BorneoWeb/target/" />
     <ignored path="$PROJECT_DIR$/BorneoServer/target/" />
@@ -33,66 +22,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BorneoServer/pom.xml">
+      <file leaf-file-name="ICategoryDAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BorneoServer/src/main/java/net/spiderpig/IDataAccessObjects/ICategoryDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="24" column="44" lean-forward="true" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
+            <state relative-caret-position="187">
+              <caret line="17" column="19" lean-forward="false" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HibernateConfig.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BorneoServer/src/main/java/net/spiderpig/Config/HibernateConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-814">
-              <caret line="33" column="23" lean-forward="false" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Category.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/BorneoServer/src/main/java/net/spiderpig/DataTransferObjects/Category.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="386">
-              <caret line="24" column="23" lean-forward="false" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AppTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BorneoServer/src/test/java/net/spiderpig/AppTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="queries.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BorneoServer/queries.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="8" column="22" lean-forward="true" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CategoryTestCase.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BorneoServer/src/test/java/net/spiderpig/CategoryTestCase.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="29" column="33" lean-forward="true" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -100,11 +35,33 @@
       <file leaf-file-name="CategoryDAO.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BorneoServer/src/main/java/net/spiderpig/DataAccessObjects/CategoryDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="21" column="41" lean-forward="false" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="41" />
+            <state relative-caret-position="361">
+              <caret line="32" column="8" lean-forward="false" selection-start-line="32" selection-start-column="8" selection-end-line="54" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CategoryTestCase.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/BorneoServer/src/test/java/net/spiderpig/CategoryTestCase.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-457">
+              <caret line="82" column="40" lean-forward="false" selection-start-line="82" selection-start-column="40" selection-end-line="82" selection-end-column="40" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="queries.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BorneoServer/queries.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="250">
+              <caret line="10" column="1" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="10" selection-end-column="1" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -166,15 +123,15 @@
         <option value="$PROJECT_DIR$/BorneoWeb/src/main/webapp/WEB-INF/views/listproducts.jsp" />
         <option value="$PROJECT_DIR$/BorneoWeb/src/main/webapp/WEB-INF/views/shared/footer.jsp" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/BorneoServer/queries.sql" />
-        <option value="$PROJECT_DIR$/BorneoServer/src/main/java/net/spiderpig/IDataAccessObjects/ICategoryDAO.java" />
         <option value="$PROJECT_DIR$/BorneoWeb/src/main/webapp/WEB-INF/dispatcher-servlet.xml" />
         <option value="$PROJECT_DIR$/BorneoServer/src/test/java/net/spiderpig/test/CategoryTestCase.java" />
-        <option value="$PROJECT_DIR$/BorneoServer/src/main/java/net/spiderpig/DataAccessObjects/CategoryDAO.java" />
         <option value="$PROJECT_DIR$/BorneoServer/pom.xml" />
         <option value="$PROJECT_DIR$/BorneoServer/src/main/java/net/spiderpig/Config/HibernateConfig.java" />
-        <option value="$PROJECT_DIR$/BorneoServer/src/test/java/net/spiderpig/CategoryTestCase.java" />
         <option value="$PROJECT_DIR$/BorneoServer/src/main/java/net/spiderpig/DataTransferObjects/Category.java" />
+        <option value="$PROJECT_DIR$/BorneoServer/src/main/java/net/spiderpig/IDataAccessObjects/ICategoryDAO.java" />
+        <option value="$PROJECT_DIR$/BorneoServer/src/main/java/net/spiderpig/DataAccessObjects/CategoryDAO.java" />
+        <option value="$PROJECT_DIR$/BorneoServer/queries.sql" />
+        <option value="$PROJECT_DIR$/BorneoServer/src/test/java/net/spiderpig/CategoryTestCase.java" />
       </list>
     </option>
   </component>
@@ -280,7 +237,27 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="spiderpig" type="462c0819:PsiDirectoryNode" />
+              <item name="DataAccessObjects" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Borneo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Borneo" type="462c0819:PsiDirectoryNode" />
+              <item name="BorneoServer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="spiderpig" type="462c0819:PsiDirectoryNode" />
               <item name="DataTransferObjects" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Borneo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Borneo" type="462c0819:PsiDirectoryNode" />
+              <item name="BorneoServer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="spiderpig" type="462c0819:PsiDirectoryNode" />
+              <item name="IDataAccessObjects" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Borneo" type="b2602c69:ProjectViewProjectNode" />
@@ -790,44 +767,44 @@
       <workItem from="1526606182500" duration="4665000" />
       <workItem from="1526651877404" duration="312000" />
       <workItem from="1526680718139" duration="1304000" />
-      <workItem from="1526682847029" duration="4602000" />
+      <workItem from="1526682847029" duration="8296000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CategoryTestCase - 2018.05.18 at 21h 43m 02s.xml">
+    <history-entry file="CategoryTestCase - 2018.05.18 at 22h 43m 01s.xml">
       <configuration name="CategoryTestCase" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CategoryTestCase - 2018.05.18 at 21h 44m 54s.xml">
+    <history-entry file="CategoryTestCase - 2018.05.18 at 23h 09m 45s.xml">
       <configuration name="CategoryTestCase" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CategoryTestCase - 2018.05.18 at 21h 46m 10s.xml">
+    <history-entry file="CategoryTestCase - 2018.05.18 at 23h 15m 02s.xml">
       <configuration name="CategoryTestCase" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CategoryTestCase - 2018.05.18 at 21h 47m 55s.xml">
+    <history-entry file="CategoryTestCase - 2018.05.18 at 23h 17m 46s.xml">
       <configuration name="CategoryTestCase" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CategoryTestCase - 2018.05.18 at 21h 50m 23s.xml">
+    <history-entry file="CategoryTestCase - 2018.05.18 at 23h 18m 28s.xml">
       <configuration name="CategoryTestCase" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CategoryTestCase - 2018.05.18 at 21h 53m 40s.xml">
+    <history-entry file="CategoryTestCase - 2018.05.18 at 23h 19m 08s.xml">
       <configuration name="CategoryTestCase" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CategoryTestCase - 2018.05.18 at 21h 58m 24s.xml">
+    <history-entry file="CategoryTestCase - 2018.05.18 at 23h 26m 51s.xml">
       <configuration name="CategoryTestCase" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CategoryTestCase - 2018.05.18 at 22h 00m 31s.xml">
+    <history-entry file="CategoryTestCase - 2018.05.18 at 23h 27m 50s.xml">
       <configuration name="CategoryTestCase" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CategoryTestCase - 2018.05.18 at 22h 07m 38s.xml">
+    <history-entry file="CategoryTestCase - 2018.05.18 at 23h 28m 19s.xml">
       <configuration name="CategoryTestCase" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CategoryTestCase_(1) - 2018.05.18 at 21h 44m 03s.xml">
-      <configuration name="CategoryTestCase (1)" configurationId="JUnit" />
+    <history-entry file="CategoryTestCase - 2018.05.18 at 23h 29m 05s.xml">
+      <configuration name="CategoryTestCase" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38649000" />
+    <option name="totallyTimeSpent" value="42343000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -840,6 +817,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1098" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -861,7 +839,7 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32864866" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32864866" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901832" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901832" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -1172,14 +1150,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BorneoServer/src/main/java/net/spiderpig/IDataAccessObjects/ICategoryDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="41" lean-forward="true" selection-start-line="0" selection-start-column="41" selection-end-line="0" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/BorneoWeb/src/main/webapp/WEB-INF/dispatcher-servlet.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
@@ -1193,16 +1163,6 @@
         <state relative-caret-position="150">
           <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BorneoServer/src/main/java/net/spiderpig/DataAccessObjects/CategoryDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="21" column="41" lean-forward="false" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1222,16 +1182,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BorneoServer/src/test/java/net/spiderpig/CategoryTestCase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="29" column="33" lean-forward="true" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/BorneoServer/src/main/java/net/spiderpig/Config/HibernateConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-814">
@@ -1242,19 +1192,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BorneoServer/queries.sql">
+    <entry file="file://$PROJECT_DIR$/BorneoServer/src/main/java/net/spiderpig/DataTransferObjects/Category.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="22" lean-forward="true" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+        <state relative-caret-position="1525">
+          <caret line="77" column="4" lean-forward="true" selection-start-line="77" selection-start-column="4" selection-end-line="77" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BorneoServer/src/main/java/net/spiderpig/DataTransferObjects/Category.java">
+    <entry file="file://$PROJECT_DIR$/BorneoServer/src/main/java/net/spiderpig/IDataAccessObjects/ICategoryDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="24" column="23" lean-forward="false" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+        <state relative-caret-position="187">
+          <caret line="17" column="19" lean-forward="false" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BorneoServer/src/main/java/net/spiderpig/DataAccessObjects/CategoryDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="32" column="8" lean-forward="false" selection-start-line="32" selection-start-column="8" selection-end-line="54" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BorneoServer/queries.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="1" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="10" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BorneoServer/src/test/java/net/spiderpig/CategoryTestCase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-457">
+          <caret line="82" column="40" lean-forward="false" selection-start-line="82" selection-start-column="40" selection-end-line="82" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

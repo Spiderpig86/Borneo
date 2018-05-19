@@ -33,4 +33,20 @@ public interface ICategoryDAO {
      *      not
      */
     boolean add(Category category);
+
+    /**
+     * Update details of existing category
+     * @param category - category to update
+     * @return
+     *      Success of updating
+     */
+    boolean update(Category category);
+
+    /**
+     * Delete a category from the database
+     * @param category - category to delete
+     * @return
+     *      Success of deletion
+     */
+    boolean delete(Category category);
 }
