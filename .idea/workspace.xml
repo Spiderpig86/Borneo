@@ -7,12 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c7f987c9-c27f-4bab-b064-8c860d22380a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BorneoServer/queries-old.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BorneoServer/src/main/java/net/spiderpig/DataAccessObjects/ProductDAO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BorneoServer/src/main/java/net/spiderpig/DataTransferObjects/Product.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BorneoServer/src/main/java/net/spiderpig/IDataAccessObjects/IProductDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BorneoServer/queries.sql" afterPath="$PROJECT_DIR$/BorneoServer/queries.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BorneoServer/src/main/java/net/spiderpig/DataAccessObjects/ProductDAO.java" afterPath="$PROJECT_DIR$/BorneoServer/src/main/java/net/spiderpig/DataAccessObjects/ProductDAO.java" />
     </list>
     <ignored path="$PROJECT_DIR$/BorneoWeb/target/" />
     <ignored path="$PROJECT_DIR$/BorneoServer/target/" />
@@ -37,28 +32,46 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="CategoryDAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BorneoServer/src/main/java/net/spiderpig/DataAccessObjects/CategoryDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="125">
+              <caret line="14" column="56" lean-forward="true" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="56" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="ProductDAO.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/BorneoServer/src/main/java/net/spiderpig/DataAccessObjects/ProductDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="20" column="8" lean-forward="false" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="20" />
+            <state relative-caret-position="335">
+              <caret line="161" column="58" lean-forward="false" selection-start-line="161" selection-start-column="58" selection-end-line="161" selection-end-column="58" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#460#461#0" expanded="true" />
-                <element signature="e#487#488#0" expanded="true" />
-                <element signature="e#599#600#0" expanded="true" />
-                <element signature="e#626#627#0" expanded="true" />
-                <element signature="e#815#816#0" expanded="true" />
-                <element signature="e#843#844#0" expanded="true" />
-                <element signature="e#1040#1041#0" expanded="true" />
-                <element signature="e#1068#1069#0" expanded="true" />
-                <element signature="e#1281#1282#0" expanded="true" />
-                <element signature="e#1309#1310#0" expanded="true" />
-                <element signature="e#1442#1443#0" expanded="true" />
-                <element signature="e#1469#1470#0" expanded="true" />
-                <element signature="e#1903#1904#0" expanded="true" />
-                <element signature="e#1930#1931#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="queries-old.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BorneoServer/queries-old.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="250">
+              <caret line="10" column="1" lean-forward="false" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="queries.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BorneoServer/queries.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1475">
+              <caret line="59" column="10" lean-forward="false" selection-start-line="59" selection-start-column="10" selection-end-line="59" selection-end-column="10" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -247,6 +260,41 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="spiderpig" type="462c0819:PsiDirectoryNode" />
               <item name="IDataAccessObjects" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Borneo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Borneo" type="462c0819:PsiDirectoryNode" />
+              <item name="BorneoWeb" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Borneo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Borneo" type="462c0819:PsiDirectoryNode" />
+              <item name="BorneoWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Borneo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Borneo" type="462c0819:PsiDirectoryNode" />
+              <item name="BorneoWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Borneo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Borneo" type="462c0819:PsiDirectoryNode" />
+              <item name="BorneoWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Borneo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Borneo" type="462c0819:PsiDirectoryNode" />
+              <item name="BorneoWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -748,7 +796,7 @@
       <workItem from="1526651877404" duration="312000" />
       <workItem from="1526680718139" duration="1304000" />
       <workItem from="1526682847029" duration="9605000" />
-      <workItem from="1526872200825" duration="2806000" />
+      <workItem from="1526872200825" duration="3731000" />
     </task>
     <servers />
   </component>
@@ -785,7 +833,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46458000" />
+    <option name="totallyTimeSpent" value="47383000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1120,14 +1168,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BorneoWeb/src/main/java/net/spiderpig/controller/PageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="22" column="16" lean-forward="false" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/BorneoWeb/src/main/webapp/WEB-INF/views/home.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
@@ -1164,22 +1204,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
           <caret line="7" column="4" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BorneoServer/queries-old.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" column="1" lean-forward="false" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BorneoServer/queries.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="59" column="10" lean-forward="false" selection-start-line="59" selection-start-column="10" selection-end-line="59" selection-end-column="10" />
           <folding />
         </state>
       </provider>
@@ -1248,16 +1272,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BorneoServer/src/main/java/net/spiderpig/DataAccessObjects/CategoryDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1990">
-          <caret line="40" column="36" lean-forward="false" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/BorneoServer/src/main/java/net/spiderpig/IDataAccessObjects/IProductDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
@@ -1268,26 +1282,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BorneoServer/src/main/java/net/spiderpig/DataAccessObjects/ProductDAO.java">
+    <entry file="file://$PROJECT_DIR$/BorneoWeb/src/main/java/net/spiderpig/controller/PageController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="20" column="8" lean-forward="false" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="20" />
+        <state relative-caret-position="375">
+          <caret line="22" column="16" lean-forward="false" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BorneoServer/src/main/java/net/spiderpig/DataAccessObjects/CategoryDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="14" column="56" lean-forward="true" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#460#461#0" expanded="true" />
-            <element signature="e#487#488#0" expanded="true" />
-            <element signature="e#599#600#0" expanded="true" />
-            <element signature="e#626#627#0" expanded="true" />
-            <element signature="e#815#816#0" expanded="true" />
-            <element signature="e#843#844#0" expanded="true" />
-            <element signature="e#1040#1041#0" expanded="true" />
-            <element signature="e#1068#1069#0" expanded="true" />
-            <element signature="e#1281#1282#0" expanded="true" />
-            <element signature="e#1309#1310#0" expanded="true" />
-            <element signature="e#1442#1443#0" expanded="true" />
-            <element signature="e#1469#1470#0" expanded="true" />
-            <element signature="e#1903#1904#0" expanded="true" />
-            <element signature="e#1930#1931#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BorneoServer/queries.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1475">
+          <caret line="59" column="10" lean-forward="false" selection-start-line="59" selection-start-column="10" selection-end-line="59" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BorneoServer/queries-old.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="1" lean-forward="false" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BorneoServer/src/main/java/net/spiderpig/DataAccessObjects/ProductDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="161" column="58" lean-forward="false" selection-start-line="161" selection-start-column="58" selection-end-line="161" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

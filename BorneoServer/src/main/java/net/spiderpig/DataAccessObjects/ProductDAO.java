@@ -2,13 +2,23 @@ package net.spiderpig.DataAccessObjects;
 
 import net.spiderpig.DataTransferObjects.Product;
 import net.spiderpig.IDataAccessObjects.IProductDAO;
+import org.hibernate.SessionFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
 /**
  * Serves as the collection of products
  */
+@Repository("productDAO") // Expose to front-end
+@Transactional // All methods run in a transaction, Spring will handle this
 public class ProductDAO implements IProductDAO {
+
+    @Autowired
+    private SessionFactory sessionFactory; // Get the session factory
+    // responsible for current user session
 
     /**
      * Get the product by ID
@@ -18,6 +28,14 @@ public class ProductDAO implements IProductDAO {
      */
     @Override
     public Product get(int productId) {
+        try {
+            return sessionFactory
+                    .getCurrentSession()
+                    .get(Product.class, Integer.valueOf(productId)); // Get a
+            // product object based on the ID from the database
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         return null;
     }
 
@@ -28,7 +46,11 @@ public class ProductDAO implements IProductDAO {
      */
     @Override
     public List<Product> list() {
-        return null;
+        return sessionFactory
+                .getCurrentSession()
+                .createQuery("FROM Product", Product.class) // Specify the
+                // class
+                .getResultList(); // Gets all the entries
     }
 
     /**
@@ -39,6 +61,15 @@ public class ProductDAO implements IProductDAO {
      */
     @Override
     public boolean add(Product product) {
+        try {
+            sessionFactory
+                    .getCurrentSession()
+                    .persist(product); // Add product as entry in database
+            return true;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
         return false;
     }
 
@@ -50,6 +81,14 @@ public class ProductDAO implements IProductDAO {
      */
     @Override
     public boolean update(Product product) {
+        try {
+            sessionFactory
+                    .getCurrentSession()
+                    .update(product); // Update specific product
+            return true;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         return false;
     }
 
@@ -61,6 +100,12 @@ public class ProductDAO implements IProductDAO {
      */
     @Override
     public boolean delete(Product product) {
+        try {
+            product.setActive(false); // Hide product
+            return this.update(product); // Update that product with new data
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         return false;
     }
 
@@ -71,7 +116,14 @@ public class ProductDAO implements IProductDAO {
      */
     @Override
     public List<Product> listActiveProducts() {
-        return null;
+        String activeProductsQuery = "FROM Products WHERE active = :active";
+        // Active parameter
+        return sessionFactory
+                .getCurrentSession()
+                .createQuery(activeProductsQuery, Product.class) // Build our query
+                .setParameter("active", true) // The param we use for
+                // checking (:active) and the value we check for
+                .getResultList();
     }
 
     /**
@@ -82,7 +134,15 @@ public class ProductDAO implements IProductDAO {
      */
     @Override
     public List<Product> listActiveProductsByCategory(int categoryId) {
-        return null;
+        String activeProductsByCatQuery = "FROM Products WHERE active = " +
+                ":active AND categoryId = :category";
+        // Active parameter
+        return sessionFactory
+                .getCurrentSession()
+                .createQuery(activeProductsByCatQuery, Product.class) // Build our query
+                .setParameter("active", true) // The param we want and value
+                .setParameter("categoryID", categoryId)
+                .getResultList();
     }
 
     /**
@@ -93,6 +153,15 @@ public class ProductDAO implements IProductDAO {
      */
     @Override
     public List<Product> getLatestActiveProducts(int count) {
-        return null;
+        String activeProductsCountQuery = "FROM PRODUCT WHERE active = " +
+                ":active ORDER BY id";
+        // Active parameter
+        return sessionFactory
+                .getCurrentSession()
+                .createQuery(activeProductsCountQuery, Product.class) // Build our query
+                .setParameter("active", true) // The param we want and value
+                .setFirstResult(0) // Index starts from 0
+                .setMaxResults(count) // Get products from index [0, count)
+                .getResultList();
     }
 }
