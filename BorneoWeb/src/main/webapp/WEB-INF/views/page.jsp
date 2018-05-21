@@ -34,8 +34,6 @@ Store the path in a variable called contextRoot for the base directory -->
 
         <title>Borneo - ${title}</title>
 
-        <title>Shop Homepage - Start Bootstrap Template</title>
-
         <!-- Bootstrap core CSS -->
         <link href="${css}/bootstrap.min.css" rel="stylesheet">
 

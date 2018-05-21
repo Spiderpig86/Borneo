@@ -7,6 +7,9 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@taglib prefix="spring" uri="http://www.springframework.org/tags"%> <!--
+Allows us to use spring URL elements for our paths -->
+<spring:url var="js" value="/resources/js" />
 <html>
     <body>
         <div class="container">
@@ -50,5 +53,10 @@
                 </div>
             </div>
         </div>
+
+        <script>
+            window.selectedPage = '${title}'; // Title from page controller
+        </script>
+        <script async src="${js}/app.js"></script>
     </body>
 </html>
