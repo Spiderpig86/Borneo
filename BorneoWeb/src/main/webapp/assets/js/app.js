@@ -5,7 +5,6 @@
 /* Update navbar with selected page in the UI */
 $(function() {
     /* Switch the selected page name */
-    console.log(selectedPage);
     switch (selectedPage) {
         case 'About':
             $('#about').addClass('active');
@@ -18,9 +17,8 @@ $(function() {
             break;
         default:
             if (selectedPage === "Home") break;
-            $('#home').addClass('active');
             $('#products').addClass('active');
-            $('$a_' + menu).addClass('active');
+            $('$a_' + selectedPage).addClass('active');
             break;
     }
 });

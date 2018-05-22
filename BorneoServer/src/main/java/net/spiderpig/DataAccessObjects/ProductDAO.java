@@ -116,7 +116,7 @@ public class ProductDAO implements IProductDAO {
      */
     @Override
     public List<Product> listActiveProducts() {
-        String activeProductsQuery = "FROM Products WHERE active = :active";
+        String activeProductsQuery = "FROM Product WHERE active = :active";
         // Active parameter
         return sessionFactory
                 .getCurrentSession()
@@ -134,14 +134,14 @@ public class ProductDAO implements IProductDAO {
      */
     @Override
     public List<Product> listActiveProductsByCategory(int categoryId) {
-        String activeProductsByCatQuery = "FROM Products WHERE active = " +
-                ":active AND categoryId = :category";
+        String activeProductsByCatQuery = "FROM Product WHERE active = " +
+                ":active AND categoryId = :categoryId";
         // Active parameter
         return sessionFactory
                 .getCurrentSession()
                 .createQuery(activeProductsByCatQuery, Product.class) // Build our query
                 .setParameter("active", true) // The param we want and value
-                .setParameter("categoryID", categoryId)
+                .setParameter("categoryId", categoryId)
                 .getResultList();
     }
 
@@ -153,7 +153,7 @@ public class ProductDAO implements IProductDAO {
      */
     @Override
     public List<Product> getLatestActiveProducts(int count) {
-        String activeProductsCountQuery = "FROM PRODUCT WHERE active = " +
+        String activeProductsCountQuery = "FROM Product WHERE active = " +
                 ":active ORDER BY id";
         // Active parameter
         return sessionFactory

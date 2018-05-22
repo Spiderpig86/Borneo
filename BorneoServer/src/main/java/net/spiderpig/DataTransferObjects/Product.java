@@ -1,14 +1,14 @@
 package net.spiderpig.DataTransferObjects;
 
-import javax.persistence.Column;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
+import javax.persistence.*;
 import java.util.UUID;
 
 /**
  * Transfer object class for the different products in the store
  */
+@Entity
 public class Product {
 
     /**
@@ -20,14 +20,18 @@ public class Product {
     private String code; // Unique ID for the product
     private String name;
     private String brand;
+    @JsonIgnore // Ignore during JSON conversion of this object
     private String description;
     @Column(name = "unit_price")
     private double unitPrice;
     private int quantity;
+    @JsonIgnore
     @Column(name = "is_active")
     private boolean active;
+    @JsonIgnore
     @Column(name = "category_id")
     private int categoryId;
+    @JsonIgnore
     @Column(name = "supplier_id")
     private int supplierId;
     private int purchases;

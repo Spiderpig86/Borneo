@@ -1,6 +1,5 @@
 package net.spiderpig;
 
-import net.spiderpig.DataAccessObjects.CategoryDAO;
 import net.spiderpig.DataTransferObjects.Category;
 import net.spiderpig.IDataAccessObjects.ICategoryDAO;
 import org.junit.BeforeClass;
