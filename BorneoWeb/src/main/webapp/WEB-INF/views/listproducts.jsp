@@ -50,13 +50,29 @@ Allows us to use spring URL elements for our paths -->
 
                         </div>
                     </div>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <table id="productListTable"
+                                   class="table table-striped table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                </tr>
+                                </thead>
+                            </table>
+                        </div>
+                    </div>
                 </div>
             </div>
+
+
         </div>
 
         <script>
             window.selectedPage = '${title}'; // Title from page controller
         </script>
-        <script async src="${js}/app.js"></script>
+        <script src="${js}/app.js"></script>
     </body>
 </html>

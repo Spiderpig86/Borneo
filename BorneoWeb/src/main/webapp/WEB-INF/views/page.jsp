@@ -91,6 +91,9 @@ Store the path in a variable called contextRoot for the base directory -->
         <script src="${js}/jquery.min.js"></script>
         <script src="${js}/bootstrap.bundle.min.js"></script>
 
+        <!-- Datatable Plugin -->
+        <script src="${js}/jquery.dataTables.min.js"></script>
+
         <!-- Script to store active menu -->
         <script>
             window.selectedPage = '${title}'; // Title from page controller
