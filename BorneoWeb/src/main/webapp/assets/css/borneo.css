@@ -36,3 +36,11 @@ footer {
     position: absolute;
     bottom: 0;
 }
+
+/*
+    Table CSS
+ */
+.dataTableImg {
+    width: 100%;
+    max-height: 100px;
+}

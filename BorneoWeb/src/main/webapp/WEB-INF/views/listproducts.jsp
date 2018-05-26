@@ -28,6 +28,11 @@ Allows us to use spring URL elements for our paths -->
                         <div class="col-lg-12">
                             <!-- Show breadcrumb for all products page -->
                             <c:if test="${userClickAllProducts == true}">
+
+                                <script>
+                                    window.categoryId = ''; // No category
+                                </script>
+
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item"><a href="${contextRoot}/home">
                                         Home</a></li>
@@ -38,6 +43,12 @@ Allows us to use spring URL elements for our paths -->
 
                             <!-- Show breadcrumb for category specific page -->
                             <c:if test="${userClickCategoryProducts == true}">
+
+                                <script>
+                                    window.categoryId = '${category.id}';
+                                    // Show category
+                                </script>
+
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item"><a href="${contextRoot}/home">
                                         Home</a></li>
@@ -57,10 +68,25 @@ Allows us to use spring URL elements for our paths -->
                                    class="table table-striped table-bordered">
                                 <thead>
                                 <tr>
-                                    <th>ID</th>
+                                    <th></th>
                                     <th>Name</th>
+                                    <th>Brand</th>
+                                    <th>Price</th>
+                                    <th>Qty. Available</th>
+                                    <th></th>
                                 </tr>
                                 </thead>
+
+                                <tfoot>
+                                <tr>
+                                    <th></th>
+                                    <th>Name</th>
+                                    <th>Brand</th>
+                                    <th>Price</th>
+                                    <th>Qty. Available</th>
+                                    <th></th>
+                                </tr>
+                                </tfoot>
                             </table>
                         </div>
                     </div>
@@ -73,6 +99,7 @@ Allows us to use spring URL elements for our paths -->
         <script>
             window.selectedPage = '${title}'; // Title from page controller
         </script>
+        <%--<script src="${js}/jquery.min.js"></script>--%>
         <script src="${js}/app.js"></script>
     </body>
 </html>

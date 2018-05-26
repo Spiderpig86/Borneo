@@ -40,6 +40,9 @@ Store the path in a variable called contextRoot for the base directory -->
         <!-- Pulse Bootstrap Theme -->
         <link href="${css}/pulse.min.css" rel="stylesheet" />
 
+        <!-- Datatables CSS -->
+        <link href="${css}/dataTables.bootstrap.min.css" rel="stylesheet" />
+
         <!-- Cirrus -->
         <link href="${css}/cirrus.css" rel="stylesheet" />
 
@@ -94,9 +97,13 @@ Store the path in a variable called contextRoot for the base directory -->
         <!-- Datatable Plugin -->
         <script src="${js}/jquery.dataTables.min.js"></script>
 
+        <!-- Datatable Theme -->
+        <script src="${js}/dataTables.bootstrap4.min.js"></script>
+
         <!-- Script to store active menu -->
         <script>
             window.selectedPage = '${title}'; // Title from page controller
+            window.contextRoot = '${contextRoot}'; // Expose context root to DOm
         </script>
         <script async src="${js}/app.js"></script>
 
