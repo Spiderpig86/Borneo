@@ -77,7 +77,7 @@ $(function() {
                         // buttons for viewing item and adding to cart
                         var str = '';
                         str += '<a class="btn btn-primary" href="' + window.contextRoot + '/show/' + data + '/product"><span class="glyphicon glyphicon-eye-open"></span></a> &#160'
-                        str += '<a class="btn btn-success" href="' + window.contextRoot + '/cart/add/' + data + '/product"><span class="glyphicon glyphicon-shipping-cart"></span></a>'
+                        str += '<a class="btn btn-success" href="' + window.contextRoot + '/cart/add/' + data + '/product"><span class="glyphicon glyphicon-shopping-cart"></span></a>'
                         return str; // Render these buttons
                     }
                 }

@@ -43,6 +43,9 @@ Store the path in a variable called contextRoot for the base directory -->
         <!-- Datatables CSS -->
         <link href="${css}/dataTables.bootstrap.min.css" rel="stylesheet" />
 
+        <!-- Glyphicons -->
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+
         <!-- Cirrus -->
         <link href="${css}/cirrus.css" rel="stylesheet" />
 
