@@ -2,7 +2,9 @@ package net.spiderpig.controller;
 
 import net.spiderpig.DataAccessObjects.CategoryDAO;
 import net.spiderpig.DataTransferObjects.Category;
+import net.spiderpig.DataTransferObjects.Product;
 import net.spiderpig.IDataAccessObjects.ICategoryDAO;
+import net.spiderpig.IDataAccessObjects.IProductDAO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -21,6 +23,8 @@ public class PageController {
     // There is no need to reinstantiate a new CategoryDAO object
     // NOTE: Must be ICategoryDAO instead of CategoryDAO since it uses an
     // interface
+    @Autowired
+    private IProductDAO productDAO;
 
     @RequestMapping(value = {"/", "/home", "/index"})
     public ModelAndView index() {
@@ -84,6 +88,28 @@ public class PageController {
         mv.addObject("category", category); // The specific category we want
         // to show
         mv.addObject("userClickCategoryProducts", true);
+
+        return mv;
+    }
+
+    /**
+     * Viewing a single product
+     */
+    @RequestMapping(value = "/show/{id}/product") // The url schema, GET by
+    // default
+    public ModelAndView showSingleProductPage(@PathVariable int id) {
+        ModelAndView mv = new ModelAndView("page"); // Use master page
+
+        Product product = productDAO.get(id); // Get the product by ID
+        product.setViews(product.getViews() + 1); // Get previous view and add 1
+
+        // Update view counter for product
+        productDAO.update(product); // Update the property since viewcounter
+        // updated
+
+        mv.addObject("title", product.getName());// Add variables for JSTL tags
+        mv.addObject("product", product);
+        mv.addObject("userClickShowProduct", true);
 
         return mv;
     }

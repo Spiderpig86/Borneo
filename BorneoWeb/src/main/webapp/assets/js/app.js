@@ -25,7 +25,6 @@ $(function() {
     var table = $('#productListTable'); // Get table from page
 
     // Execute only if the table exists and has elements
-    console.log('yeet');
     if (table.length) {
 
         // Set the url source for table to pull from
