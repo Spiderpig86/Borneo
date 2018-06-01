@@ -5,6 +5,8 @@ import net.spiderpig.DataTransferObjects.Category;
 import net.spiderpig.DataTransferObjects.Product;
 import net.spiderpig.IDataAccessObjects.ICategoryDAO;
 import net.spiderpig.IDataAccessObjects.IProductDAO;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -17,6 +19,9 @@ import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class PageController {
+
+    private static final Logger logger = LoggerFactory.getLogger
+            (PageController.class);
 
     @Autowired // Tells spring to auto wire or dependency inject from backend
     private ICategoryDAO categoryDAO; // This is the name we used in the DAO.
@@ -31,6 +36,9 @@ public class PageController {
         ModelAndView mv = new ModelAndView("page"); // Create a model view
         // with page as the corresponding JSP name. Note that this is a
         // logical name, and does not point to the physical page
+
+        logger.info("Inside PageController index method - INFO");
+        logger.debug("Inside PageController index method - DEBUG");
 
         /* Set the page properties */
         mv.addObject("title", "Home");

@@ -1,0 +1,22 @@
+<!-- Configuration for SLF4J -->
+<configuration>
+    <appender name="consoleAppender"
+              class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <!-- Pattern for log messages -->
+            <Pattern>%-5level %msg %d{HH:mm:ss.SS} %logger{36} %n</Pattern>
+            <!-- Left justify log with message level, time, and logger
+            information (takes in int to get the name) -->
+        </encoder>
+    </appender>
+
+    <!-- Show debug level logs and do not duplicate logs -->
+    <logger name="net.spiderpig" level="DEBUG" additivity = "false">
+        <appender-ref ref="consoleAppender" />
+    </logger>
+
+    <!-- Only show INFO, do not show DEBUG from Spring -->
+    <root level="INFO">
+        <appender-ref ref="consoleAppender" />
+    </root>
+</configuration>
