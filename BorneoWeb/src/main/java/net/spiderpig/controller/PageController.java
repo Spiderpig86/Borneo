@@ -1,10 +1,10 @@
 package net.spiderpig.controller;
 
-import net.spiderpig.DataAccessObjects.CategoryDAO;
 import net.spiderpig.DataTransferObjects.Category;
 import net.spiderpig.DataTransferObjects.Product;
 import net.spiderpig.IDataAccessObjects.ICategoryDAO;
 import net.spiderpig.IDataAccessObjects.IProductDAO;
+import net.spiderpig.exception.ProductNotFoundException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -101,17 +101,24 @@ public class PageController {
     }
 
     /**
-     * Viewing a single product
+     * Viewing a single product with handle for error
+     * This does not handle {id} being a non-int (handled in general
+     * exception handler)
      */
     @RequestMapping(value = "/show/{id}/product") // The url schema, GET by
     // default
-    public ModelAndView showSingleProductPage(@PathVariable int id) {
+    public ModelAndView showSingleProductPage(@PathVariable int id) throws
+            ProductNotFoundException {
         ModelAndView mv = new ModelAndView("page"); // Use master page
 
         Product product = productDAO.get(id); // Get the product by ID
-        product.setViews(product.getViews() + 1); // Get previous view and add 1
+
+        // Verify that the product exists
+        if (product == null) throw new ProductNotFoundException(); // Throw
+        // our custom exception
 
         // Update view counter for product
+        product.setViews(product.getViews() + 1); // Get previous view and add 1
         productDAO.update(product); // Update the property since viewcounter
         // updated
 

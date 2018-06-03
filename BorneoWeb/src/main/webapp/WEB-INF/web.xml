@@ -16,6 +16,12 @@
         <servlet-name>dispatcher</servlet-name> <!-- By convention, our
         servlet file name must match this (dispatcher-servlet.xml) -->
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+
+        <!-- Handle exceptions in server to route to our custom exception -->
+        <init-param>
+            <param-name>throwExceptionIfNoHandlerFound</param-name>
+            <param-value>true</param-value>
+        </init-param>
     </servlet>
 
     <!-- Servlet mapping -->

@@ -16,8 +16,8 @@ are -->
 >
 
     <!-- Add the context that points to our controller in our controller
-    package, will be used to handle web requests -->
-    <context:component-scan base-package="net.spiderpig.controller" />
+    package, will be used to handle web requests along with our exceptions -->
+    <context:component-scan base-package="net.spiderpig" />
     <context:component-scan base-package="net.spiderpig.DataAccessObjects" /> <!-- Add
     this so that our context can scan and find this component (used in
     PageController -->
