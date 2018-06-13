@@ -92,6 +92,12 @@ Store the path in a variable called contextRoot for the base directory -->
                     <%@include file="singleproduct.jsp"%> <!-- Render contact
                     content -->
                 </c:if>
+
+                <!-- Load only when the user clicks manage products -->
+                <c:if test="${ userClickManageProducts == true }">
+                    <%@include file="manageproducts.jsp"%> <!-- Render contact
+                    content -->
+                </c:if>
             </div>
 
             <!-- Footer -->

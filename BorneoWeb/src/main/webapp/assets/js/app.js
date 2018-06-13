@@ -15,6 +15,9 @@ $(function() {
         case 'All Products':
             $('#products').addClass('active');
             break;
+        case 'Manage Products':
+            $('#manage').addClass('active');
+            break;
         default:
             if (selectedPage === "Home") break;
             $('#products').addClass('active');

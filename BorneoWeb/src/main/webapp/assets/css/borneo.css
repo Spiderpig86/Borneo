@@ -31,6 +31,10 @@ footer {
     /*padding: 4rem 0 10rem 0;*/
 }
 
+.help-block {
+    color: #ff0000;
+}
+
 footer {
     position: absolute;
     bottom: 0;
