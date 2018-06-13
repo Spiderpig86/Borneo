@@ -67,16 +67,33 @@ $(function() {
                     }
                 },
                 {
-                    data: 'quantity'
+                    data: 'quantity',
+                    mRender: function(data, type, row) {
+                        // Show out of stock if less than 1
+                        if (data < 1)
+                            return '<span style="color:red">Out of stock!</span>'
+
+                        return data; // Otherwise return regularly
+                    }
                 },
                 {
                     data: 'id',
                     bSortable: false, // Hide sort button for column
                     mRender: function(data, type, row) { // Render the new
                         // buttons for viewing item and adding to cart
+                        // data is id, row is informatoon on entire record
+                        // or item
                         var str = '';
                         str += '<a class="btn btn-primary" href="' + window.contextRoot + '/show/' + data + '/product"><span class="glyphicon glyphicon-eye-open"></span></a> &#160'
-                        str += '<a class="btn btn-success" href="' + window.contextRoot + '/cart/add/' + data + '/product"><span class="glyphicon glyphicon-shopping-cart"></span></a>'
+
+                        if (row.quantity < 1) {
+                            str += '<a class="btn btn-success disabled"' +
+                                ' href="javascript:void(0)"><span' +
+                                ' class="glyphicon glyphicon-shopping-cart"></span></a>'
+                        } else {
+                            str += '<a class="btn btn-success" href="' + window.contextRoot + '/cart/add/' + data + '/product"><span class="glyphicon glyphicon-shopping-cart"></span></a>'
+                        }
+
                         return str; // Render these buttons
                     }
                 }

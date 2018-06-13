@@ -40,14 +40,31 @@
             <hr />
 
             <h4>Price: $<strong>${product.unitPrice}</strong></h4>
+            <c:choose>
+                <c:when test="${product.quantity < 1}">
+                    <!-- When the quantity is less than 1, display out of
+                    stock -->
+                    <h6>Qty. Available:
+                        <span style="color: red">Out of stock!</span></h6>
 
-            <h6>Qty. Available: ${product.quantity}</h6>
+                    <a href="#"
+                       class="btn btn-success disabled"><strike>
+                        <span class="glyphicon glyphicon-shopping-cart"></strike></span>
+                        Add to Card
+                    </a>
+                </c:when>
+                <c:otherwise>
+                    <!-- There are products available -->
+                    <h6>Qty. Available: ${product.quantity}</h6>
 
-            <a href="${contextRoot}/card/add/${product.id}/product"
-               class="btn btn-success">
-                <span class="glyphicon glyphicon-shopping-cart"></span>
-                Add to Card
-            </a>
+                    <!-- Add to card button -->
+                    <a href="${contextRoot}/card/add/${product.id}/product"
+                       class="btn btn-success">
+                        <span class="glyphicon glyphicon-shopping-cart"></span>
+                        Add to Card
+                    </a>
+                </c:otherwise>
+            </c:choose>
             <a href="${contextRoot}/card/add/${product.id}/product"
                class="btn btn-success">
                 Back
